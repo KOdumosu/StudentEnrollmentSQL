@@ -2,21 +2,41 @@
 
 **Module:** SQL Relational Databases (CSE 310 – Module 2)  
 **Author:** Kehinde Olusegun Odumosu  
-**Date:** 28/10/2025
+**Date:** 22/11/2025
 
 ## Project Overview
-A small database-driven application to manage student course enrollments. The project demonstrates relational database design, normalization, DDL/DML, joins, aggregation, and a minimal command-line interface for interacting with the database. Implemented using SQLite (or MySQL) and a short Python CLI for interaction.
+This project demonstrates the core principles of relational database design using SQLite.  
+It includes table creation (DDL), data manipulation (DML), normalization, foreign keys, JOIN queries, and a working Python command-line interface (CLI) to interact with the database.
+
+The project simulates a Student Enrollment System, where:
+- Students register for courses
+- Courses belong to departments
+- Enrollments map students to their courses with grades
+
+All SQL and Python code is original and written for this module.
+
+---
 
 ## Features
-- Students, Courses, and Enrollments tables with referential integrity.
-- SQL scripts to create schema and populate sample data.
-- Example queries showing JOINs, GROUP BY, and aggregate functions.
-- Simple Python CLI (`app.py`) to add/list students, courses, and enrollments.
-- All code documented with inline comments.
+- **Three normalized tables:** Students, Courses, Enrollments  
+- **Referential integrity:** FOREIGN KEY constraints with cascading behaviors  
+- **Preloaded test data:** Using `sample_data.sql`  
+- **Command-line interface (CLI):** Built with Python to query data  
+- **Example queries:** JOIN, GROUP BY, COUNT, filtering  
+- **Fully documented code:** In both SQL and Python files  
+
+---
 
 ## Requirements
-- Python 3.8+ (if using the CLI)
-- SQLite (or MySQL server + connector)
-- git (for version control)
+To run this project, you need:
 
+- **Python 3.8+**  
+- **SQLite (sqlite3)** installed and added to PATH  
+- **Git** (for cloning the repo)
+
+Optional:
+- Visual Studio Code (recommended)
+- ER diagram viewer
+
+---
 ## Repository Structure
